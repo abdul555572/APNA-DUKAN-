@@ -1,0 +1,54 @@
+# APNA-DUKAN-<!DOCTYPE html>
+<html>
+<head>
+  <title>Apna Dukaan</title>
+  <style>
+    body { font-family: Arial; text-align: center; background:#f2f2f2; }
+    h1 { background: green; color:white; padding:15px; }
+    .product {
+      background:white;
+      margin:15px;
+      padding:10px;
+      border-radius:10px;
+      box-shadow:0 0 10px gray;
+    }
+    button {
+      background: green;
+      color:white;
+      padding:10px;
+      border:none;
+      border-radius:5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🛒 Apna Dukaan</h1>
+
+<div class="product">
+  <h3>🥔 Potato (500g)</h3>
+  <p>Price: ₹27</p>
+  <button onclick="order('Potato')">Order</button>
+</div>
+
+<div class="product">
+  <h3>🍅 Tomato (100g)</h3>
+  <p>Price: ₹17</p>
+  <button onclick="order('Tomato')">Order</button>
+</div>
+
+<div class="product">
+  <h3>🧅 Onion (100g)</h3>
+  <p>Price: ₹28</p>
+  <button onclick="order('Onion')">Order</button>
+</div>
+
+<script>
+function order(item){
+  window.open("https://wa.me/918639616382?text=I want to order " + item);
+}
+</script>
+
+</body>
+</html>
